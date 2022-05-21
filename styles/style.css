@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Grape+Nuts&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Grape Nuts', cursive;
+    overflow-x: hidden;
+}
+
+h1{
+    font-size: 40px;
+    pointer-events: none;
+    user-select: none;
+}
+
+:root{
+    --pinky: rgb(239, 35, 60);
+    --grayish: rgb(141, 153, 174);
+    --bonewhite: rgb(237, 242, 244);
+    --redish: rgb(215, 4, 39);
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    color: var(--bonewhite);
+    text-align: center;
+}
+
+.header img{
+    height: 50px;
+}
+
+.header img:hover{
+    transition: all 1s;
+    transform: rotate(360deg);
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    background: linear-gradient(to bottom, rgba(215, 4, 39, 0.52), rgba(141, 153, 174, 0.73)),
+    url('/images/banner.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+#randomDrink{
+    padding: 2rem;
+    background: var(--pinky);
+    color: var(--bonewhite);
+    border: hidden;
+    border-radius: 15px;
+    font-size: 30px;
+    font-family: 'Grape Nuts', cursive;
+}
+
+#randomDrink:hover{
+    cursor: pointer;
+    transition: all 1s;
+    transform: scale(1.1);
+}
+
+#forChildren{
+    text-decoration: none;
+    color: var(--bonewhite);
+    font-size: 30px;
+}
+
+#forChildren:visited{
+    text-decoration: none;
+    color: var(--bonewhite);
+    font-size: 30px;
+}
+
+.randomCocktailThumb{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    color: yellow;
+    max-height: 80vh;
+}
+
+.randomCocktail{
+    width: 250px;
+    height: 250px;
+    border: 5px solid var(--pinky);
+    border-radius: 15px;
+}
+
+.cocktailAnimation{
+    transition: 0.5s all;
+    transform: rotate3d(0, 1, 0, 360deg);
+}
+
+.randomCocktailThumb article{
+    background: #111;
+    border-radius: 5px 15px;
+    margin: .5rem;
+    font-size: 50px;
+}
+
+.randomCocktailThumb h5{
+    color: black;
+    background: var(--bonewhite);
+    border-radius: 5px 15px;
+    border-bottom: 1px solid var(--bonewhite);
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 600px) {
+    .randomCocktailThumb article{
+        font-size: 20px;
+    }
+  }
