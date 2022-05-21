@@ -33,11 +33,11 @@ h1{
 }
 
 .header img{
+    transition: all 1s;
     height: 50px;
 }
 
 .header img:hover{
-    transition: all 1s;
     transform: rotate(360deg);
 }
 
